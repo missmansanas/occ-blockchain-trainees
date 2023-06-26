@@ -1,0 +1,17 @@
+What is CLI for
+CLI is for the interactions of a device (or comp program), commands from a user/client & responses from the device.
+
+Common CLI commands and their meanings:
+List - lists files on folder
+Exit/Quit - ends a commands
+Remove - deletes a file or a folder
+
+What is git for?
+Git is for a systematic exchanges of files. To easily update & clear documents & repository, esp if one file is shared or been working on by more than 1 person.
+
+Common GIT commands and their meanings?
+pwd - present working directory
+mkdir - make folder
+rmdir - delete folder
+touch - make a file
+ls - list files
