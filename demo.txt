@@ -1,0 +1,17 @@
+Today's date is June 26
+
+
+directory = folder
+directory + git = repository
+local -> local repository
+remove - remote repository
+
+
+
+$ git branch -M main
+
+
+ $ mv demo.txt "Arboleda, Anne Nicole"
+The command you provided, $ mv demo.txt "Arboleda, Anne Nicole", is used to move or rename a file named "demo.txt" to a new location or change its name. In this case, the file "demo.txt" is being moved to a directory or folder named "Arboleda, Anne Nicole".
+
+
