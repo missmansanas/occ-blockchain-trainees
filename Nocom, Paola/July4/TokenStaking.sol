@@ -7,7 +7,7 @@ contract TokenStaking is ERC20 {
     mapping(address => uint256) public staked; // amount staked by user
     mapping(address => uint256) private stakedFromTS; // timestamp of the staking
 
-    constructor() ERC20("Fixed Staking", "FIX") {
+    constructor() ERC20("apple tokens", "atk") {
         _mint(msg.sender, 100000000000000000000);
     }
 
@@ -38,7 +38,7 @@ contract TokenStaking is ERC20 {
     function claim() public {
         require(staked[msg.sender] > 0, "You do not have any amount staked.");
 
-        uint256 secondsStaked = block.timestamp - stakedFromTS[msg.sender];
+        uint256 secondsStaked = block.timestamp - stakedFromTS[msg.sender]; // 100 ATK * 100secs
         uint256 rewards = staked[msg.sender] * secondsStaked / 3.145e7;
         _mint(msg.sender, rewards);
         stakedFromTS[msg.sender] = block.timestamp;
