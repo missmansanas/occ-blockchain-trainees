@@ -1,0 +1,14 @@
+Sample Program
+version 1.15
+Menu collection includes:
+- Filipino dishes
+- American dishes
+- Korean dishes
+- Japanese dishes
+- German dishes
+- Mexican dishes
+- Indian dishes
+- French dishes
+Other features include:
+- Create your own custom dish
+- Share your recipes online!
