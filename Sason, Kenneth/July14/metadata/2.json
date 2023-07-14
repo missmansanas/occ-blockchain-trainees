@@ -1,0 +1,23 @@
+{
+    "name": "Mariposa",
+    "description": "In a garden resplendent with vibrant blooms and delicate whispers of nature, 'Mariposa: Wings of Transformation' captures the ephemeral beauty and transformative journey of a majestic butterfly..",
+    "image": "https://ipfs.io/ipfs/QmcDzJsVmxUBcbUNQmfQCsmY6MFiqEUcSTrNr9rvndpKrB/2.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Portrait"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

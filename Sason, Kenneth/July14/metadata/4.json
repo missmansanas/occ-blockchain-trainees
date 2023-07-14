@@ -1,0 +1,23 @@
+{
+    "name": "Naruto: Tales of the Chivalrous Shinobi",
+    "description": "The canvas unfolds to reveal a scene reminiscent of a medieval tapestry, with richly textured brushstrokes and an earthy color palette that evokes a sense of ancient grandeur. Naruto, the beloved shinobi of hidden powers, stands at the center of the painting, transformed into a knightly figure, adorned in armor befitting the age.",
+    "image": "https://ipfs.io/ipfs/QmcDzJsVmxUBcbUNQmfQCsmY6MFiqEUcSTrNr9rvndpKrB/4.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Portrait"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

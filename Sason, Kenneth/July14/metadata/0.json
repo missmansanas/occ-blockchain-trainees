@@ -1,0 +1,23 @@
+{
+    "name": "Octopus in the forest",
+    "description": "In a secluded corner of the forest, where sunlight filters through the dense canopy of towering trees, an extraordinary creature finds itself navigating an unfamiliar terrain. A crippled octopus, its delicate form juxtaposed against the lush surroundings, becomes a testament to resilience and the mysteries of nature.",
+    "image": "https://ipfs.io/ipfs/QmcDzJsVmxUBcbUNQmfQCsmY6MFiqEUcSTrNr9rvndpKrB/0.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Mythological"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+  }
