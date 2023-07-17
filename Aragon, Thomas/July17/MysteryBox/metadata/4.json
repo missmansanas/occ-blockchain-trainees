@@ -1,0 +1,23 @@
+{
+    "name": "Cute Kitten",
+    "description": "An adorable kitten on an alley",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/4.jpg",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Abstract"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "People and Animals"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 1:1"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

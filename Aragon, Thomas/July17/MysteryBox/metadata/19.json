@@ -1,0 +1,23 @@
+{
+    "name": "Cocktail",
+    "description": "Fine cocktail dish to go with dinner",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/19.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Food"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Cuisine"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

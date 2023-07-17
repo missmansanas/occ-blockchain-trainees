@@ -1,0 +1,23 @@
+{
+    "name": "Subway",
+    "description": "Inside of an empty subway train",
+    "image": "https://ipfs.io/ipfs/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/17.jpg",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Abstract"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Structures"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 1:1"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

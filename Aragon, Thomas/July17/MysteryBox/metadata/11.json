@@ -1,0 +1,23 @@
+{
+    "name": "Courtroom",
+    "description": "An empty courtroom on a normal day",
+    "image": "https://ipfs.io/ipfs/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/11.jpg",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Abstract"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Structures"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 1:1"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

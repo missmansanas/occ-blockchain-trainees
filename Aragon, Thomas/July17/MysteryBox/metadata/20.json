@@ -1,0 +1,23 @@
+{
+    "name": "Full Moon",
+    "description": "A bright full moon shining over a beautiful nighttime scenery",
+    "image": "https://ipfs.io/ipfs/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/20.jpg",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Abstract"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Scenery"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 1:1"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

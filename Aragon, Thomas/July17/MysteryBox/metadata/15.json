@@ -1,0 +1,23 @@
+{
+    "name": "Leonardo",
+    "description": "A portrait of Leonardo da Vinci in oil",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/15.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "People and Animals"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

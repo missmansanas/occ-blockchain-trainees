@@ -1,0 +1,23 @@
+{
+    "name": "Kitchen",
+    "description": "A view of an empty kitchen on a sunny morning",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/16.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Realistic"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Scenery"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}
