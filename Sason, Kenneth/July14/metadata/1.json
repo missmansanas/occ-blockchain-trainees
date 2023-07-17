@@ -1,0 +1,23 @@
+{
+    "name": "Yuna, the Serene Blade",
+    "description": "Yuna stands with poise and grace, radiating an aura of quiet confidence. Her flowing garments, a blend of traditional and modern design, swirl around her in harmonious elegance. Soft, pastel hues intertwine with vibrant accents, embodying the harmony between strength and femininity.",
+    "image": "https://ipfs.io/ipfs/QmcDzJsVmxUBcbUNQmfQCsmY6MFiqEUcSTrNr9rvndpKrB/1.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Portrait"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+  }

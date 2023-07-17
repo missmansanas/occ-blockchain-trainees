@@ -1,0 +1,23 @@
+{
+    "name": "Jax, the Unbreakable Sentinel",
+    "description": "Adorned in a suit crafted by skilled artisans, Jax exudes an aura of indomitable strength. Each component of the armor reflects a perfect fusion of form and function, designed to withstand the fiercest of battles. The chestplate gleams with a polished metallic sheen, etched with intricate patterns that pay homage to ancient traditions of warriors past.",
+    "image": "https://ipfs.io/ipfs/QmcDzJsVmxUBcbUNQmfQCsmY6MFiqEUcSTrNr9rvndpKrB/3.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Portrait"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}
