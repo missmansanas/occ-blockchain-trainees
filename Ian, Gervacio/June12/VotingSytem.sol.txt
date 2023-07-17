@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract VotingSystem {
+
+    enum VoteOption {
+        Yes,
+        No
+    }
+
+    mapping(address => bool) public hasVoted; //checking if wallet address had already casted vote
+    mapping(address => VoteOption) public votes; //yes or no
+
+    uint private yesCount;
+    uint private noCount;
+
+    constructor() {
+        //initializing count to 0
+        yesCount = 0;
+        noCount = 0;
+    }
+
+    function voteYes() public {
+        require(!hasVoted[msg.sender], "You have already voted");
+
+        votes[msg.sender] = VoteOption.Yes;
+        yesCount++;
+        hasVoted[msg.sender] = true;
+    }
+
+    function voteNo() public {
+        require(!hasVoted[msg.sender], "You have already voted");
+
+        votes[msg.sender] = VoteOption.No;
+        noCount++;
+        hasVoted[msg.sender] = true;
+    }
+
+    function getVoteCounts() public view returns (uint, uint, uint) {
+
+        uint totalCount = yesCount + noCount;
+
+        require(totalCount > 0, "There are no votes casted yet");
+
+        //Calculate percentage
+        uint yesPercentage = (yesCount * 100) / totalCount;
+        uint noPercentage = (noCount * 100) / totalCount;
+
+        return (yesPercentage, noPercentage, totalCount);
+    }
+}
+
