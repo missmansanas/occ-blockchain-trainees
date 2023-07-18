@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.18;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract KenNFT is ERC721Enumerable, Ownable {
+contract KenNFTV3 is ERC721Enumerable, Ownable {
     using Strings for uint256;
     string _baseTokenURI;
     uint256 public _price = 0.01 ether;
