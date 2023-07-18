@@ -1,8 +1,8 @@
 const hre = require("hardhat");
 
 async function main() {
-  const KenNFTContract = await hre.ethers.deployContract("KenNFT", [
-    "ipfs://Qme6zq49JyS4Tu7iKiQ7VBuLfuyFt6zKRHwAZyAqb6AEoY/0",
+  const KenNFTContract = await hre.ethers.deployContract("KenNFTV3", [
+    "ipfs://Qme6zq49JyS4Tu7iKiQ7VBuLfuyFt6zKRHwAZyAqb6AEoY/",
   ]);
   await KenNFTContract.waitForDeployment();
   console.log(`Contract Deployed to :${KenNFTContract.target}`);
