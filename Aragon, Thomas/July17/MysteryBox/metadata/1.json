@@ -1,0 +1,23 @@
+{
+    "name": "A Cup of Coffee",
+    "description": "A fresh cup of coffee for energy in the morning",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/1.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Food"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Cuisine"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

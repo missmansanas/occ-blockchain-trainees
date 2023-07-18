@@ -1,0 +1,23 @@
+{
+    "name": "Lighthouse",
+    "description": "The view of a lighthouse in the middle of the sea during nighttime",
+    "image": "https://ipfs.io/ipfs/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/8.jpg",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Structures"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Scenery"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 1:1"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}

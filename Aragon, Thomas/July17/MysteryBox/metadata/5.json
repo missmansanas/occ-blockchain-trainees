@@ -1,0 +1,23 @@
+{
+    "name": "A Man Smoking Cigarettes",
+    "description": "A man smoking cigarettes on a normal day",
+    "image": "https://ipfs.io/QmdVVawsQ71Zgni1CTadSvgFynPBNHxQUsBjTqj9D8Teux/5.png",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Realistic"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "People and Animals"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+}
