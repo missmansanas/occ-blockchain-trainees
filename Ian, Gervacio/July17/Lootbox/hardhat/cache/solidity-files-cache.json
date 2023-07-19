@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\elain\\OneDrive\\Documents\\WORK-DESKTOP-1BDMN9J\\OCC\\Repo\\Ian, Gervacio\\July17\\Lootbox\\hardhat\\contracts\\Lootbox.sol": {
-      "lastModificationDate": 1689581303133,
-      "contentHash": "aacd72065415b73cbe081186c1f22a92",
+      "lastModificationDate": 1689641112110,
+      "contentHash": "391ab884a27846bc34976f6f474026b3",
       "sourceName": "contracts/Lootbox.sol",
       "solcConfig": {
         "version": "0.8.19",
