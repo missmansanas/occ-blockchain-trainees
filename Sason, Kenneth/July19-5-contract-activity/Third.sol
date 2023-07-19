@@ -20,6 +20,6 @@ contract Members {
     }
 
     function removeMember(address _member) external {
-        member[_newMember] = false;
+        member[_member] = false;
     }
 }
