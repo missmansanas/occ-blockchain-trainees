@@ -1,0 +1,23 @@
+{
+    "name": "Frustration",
+    "description": "The frustated priest",
+    "image": "ipfs://bafybeie6zycgm33fpj3tsbndxpwli6jpr2xvy3eaqnmjvdut4njihlcpi4",
+    "attributes": [
+        {
+            "trait_type": "Style",
+            "value": "Oil Painting"
+        },
+        {
+            "trait_type": "Theme",
+            "value": "Mythological"
+        },
+        {
+            "trait_type": "Dimensions",
+            "value": "Portrait 4:5"
+        },
+        {
+            "trait_type": "Medium",
+            "value": "Digital Art"
+        }
+    ]
+  }
