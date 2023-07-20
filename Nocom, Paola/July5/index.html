@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>One Community Token Whitelisting dApp</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    body {
+      padding: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 90vh;
+      box-sizing: border-box;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      padding-right: 60px;
+    }
+
+    button {
+      padding: 8px 32px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 3px;
+    }
+
+    form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+
+    form>div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='main'>
+    <h1>One Community Token Whitelisting dApp</h1>
+
+    <form>
+      <div>
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+      </div>
+      <button onclick="addToWhitelist()">Add to Whitelist</button>
+    </form>
+
+    <form>
+      <div>
+        <label for="checkAddress">Check Whitelisting:</label>
+        <input type="text" id="checkAddress">
+      </div>
+      <button onclick="checkWhitelisting()">Check</button>
+    </form>
+
+    <div id="result"></div>
+
+  </div>
+
+  <img src='./One-Community.svg' alt='' />
+  <script>
+    // Connect to the Ethereum network using web3.js
+    if (typeof web3 !== 'undefined') {
+      web3 = new Web3(web3.currentProvider);
+    } else {
+      web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+    }
+
+    // Set the contract address and ABI
+    const contractAddress = '0x2A3abeFCeFDB7421Bb9FB6920Fb299dF0d7C9034';
+    const contractABI = [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          }
+        ],
+        "name": "addToWhitelist",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          }
+        ],
+        "name": "removeFromWhitelist",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          }
+        ],
+        "name": "isWhitelisted",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ];
+
+    // Create an instance of the contract
+    const contract = new web3.eth.Contract(contractABI, contractAddress);
+
+    // Function to add an address to the whitelist
+    async function addToWhitelist() {
+      event.preventDefault();
+      const address = document.getElementById('address').value;
+
+      try {
+        const accounts = await web3.eth.requestAccounts();
+        const result = await contract.methods.addToWhitelist(address).send({ from: accounts[0] });
+        console.log(result);
+
+        document.getElementById('result').textContent = 'Address added to the whitelist.';
+      } catch (error) {
+        console.error(error);
+        document.getElementById('result').textContent = 'Error adding address to the whitelist.';
+      }
+    }
+
+    // Function to check if an address is whitelisted
+    async function checkWhitelisting() {
+      event.preventDefault();
+      const checkAddress = document.getElementById('checkAddress').value;
+
+      try {
+        const isWhitelisted = await contract.methods.isWhitelisted(checkAddress).call();
+        console.log(isWhitelisted);
+
+        if (isWhitelisted) {
+          document.getElementById('result').textContent = 'Address is whitelisted.';
+        } else {
+          document.getElementById('result').textContent = 'Address is not whitelisted.';
+        }
+      } catch (error) {
+        console.error(error);
+        document.getElementById('result').textContent = 'Error checking whitelisting status.';
+      }
+    }
+  </script>
+</body>
+
+</html>
