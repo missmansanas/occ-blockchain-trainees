@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animated-background {
+    animation: changeColor 5s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes changeColor {
+    0% { background-color: #0e0000; } /* Start with red */
+    25% { background-color: #66b666; } /* Change to green after 25% of the animation */
+    50% { background-color: #0000ff; } /* Change to blue after 50% of the animation */
+    75% { background-color: #ffff00; } /* Change to yellow after 75% of the animation */
+    100% { background-color: #ff00ff; } /* End with magenta at 100% of the animation */
+  }
+  
+body{
+    font-family: 'Press Start 2P', cursive;
+    margin: auto;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    color: rgb(240, 255, 32);
+    font-weight: 400;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(238, 255, 0);
+    background: rgb(31, 31, 31);
+    border-radius: 10px;
+}
+.dare-box{
+    height: 600px;
+    width: 800px;
+    background-color: #FBEEAC;
+    border-radius: 15px;
+}
+.text-box{
+    height: 80%;
+}
+.button-container{
+    height: 20%;
+}
+button{
+    height: 70px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ffff00;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(4px);
+    transition: all .1s;
+}
