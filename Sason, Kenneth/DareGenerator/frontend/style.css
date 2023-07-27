@@ -19,16 +19,27 @@
 body{
     font-family: 'Press Start 2P', cursive;
     margin: auto;
-    background-image: url("cover.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    padding: 150px;
+    position: relative;
+    padding: 0 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    
 }
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: blur(10px) grayscale(50%);
+    position: absolute;
+    z-index: -1;
+    
+}
+
 h1{
     color: rgb(240, 255, 32);
     font-weight: 400;
@@ -70,4 +81,19 @@ button{
 button:hover{
     transform: translateY(4px);
     transition: all .1s;
+}
+.balance{
+    background: rgb(149, 60, 60);
+    width: 500px;
+    height: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+.balance-text{
+    color: #e7e734;
+    font-size: 30px;
 }

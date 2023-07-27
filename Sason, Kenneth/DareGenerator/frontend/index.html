@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <h1 class="main-title animated-background">Dare Generator</h1>
     <div class="dare-box">
         <div class="text-box">
             <p id="dare-text"></p>
         </div>
         <div class="button-container">
-            <button class="animated-background">Generate Dare</button>
+            <button onclick="getDare()" class="animated-background">Show Dare</button>
+            <button onclick="getRandomWords()">Generate Dare</button>
         </div>
     </div>
+    <div class="balance">
+        <h2>Link Balance:</h2>
+        <h3 class="balance-text">
+
+        </h3>
+    </div>
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
     <script src="app.js"></script>
 </body>
 </html>
