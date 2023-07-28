@@ -1,0 +1,90 @@
+.hidden {
+    display: none;
+}
+
+body {
+    padding-top: 15px;
+    background: url(./resto-bg.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Black', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.bigger {
+    position: relative;
+    padding-bottom: 30px;
+    top:45px;
+    color: white;
+    font-size: 56px;
+}
+
+.button {
+    position: absolute;
+    top: 450px;
+    right: 600px;
+    padding: 12px 40px;
+    width: 22%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 24px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.waiting {
+    position: relative;
+    top: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: yellow;
+    text-align: center;
+    align-items: center;
+}
+
+.result {
+    top: 45px;
+    right: 0;
+    left: 0;
+    content: " ";
+    position: relative;
+    z-index: 1;
+}
+
+.result .inner {
+    background: #1fdfff;
+    padding: 18px 30px;
+    max-width: 541px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    top: 56px;
+    margin: auto;
+    outline: 2px solid;
+    font-weight: 700;
+    color: black;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.23s ease;
+}
+
+span.close {
+    cursor: pointer;
+    position: absolute;
+    right: 23px;
+    top: 8px;
+}

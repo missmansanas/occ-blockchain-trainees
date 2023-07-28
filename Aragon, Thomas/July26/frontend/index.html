@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fortune Cookie dApp</title>
+        <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+        <link rel="stylesheet" href="./style.css"></link>
+    </head>
+    <body>
+        <div class = "header">
+            <h1 class = "bigger">Fortune Cookie dApp</h1>
+        </div>
+        <img height = "228px" width = "300px" src = "./cookie.png" />
+        <a class="button" onclick = "getFortune()">Get Your Fortune!</a>
+        <div class="waiting hidden">
+            <div style="color: black"><span id="wait"></span></div>
+        </div>
+        <div class="result hidden">
+            <div class = "inner">
+			    <span class="close" onclick="loadResult(this), loadWaiting(this), buttonPopUp(this)">X</span>
+			    <div>Your fortune is...</div>
+			    <div style="color: black;">Your Fortune: <span id="result"></span></div>
+                <div style="color: black;">"<span id="message"></span>"</div>
+            </div>
+		</div>
+    </body>
+    <script src="./app.js"></script>
+</html>
