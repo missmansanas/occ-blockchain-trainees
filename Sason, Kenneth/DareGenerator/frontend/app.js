@@ -282,28 +282,11 @@ const contractAbi = [
     type: "function",
   },
 ];
-const contractAddress = "0x25Cf9236F382934aC22C23D5bF0C5DDB561F34Ea";
+const contractAddress = "0x4C32e735eDc5a00658Dc33b9c1837c2419aAB6b4";
 let MyContract;
 let signer;
 const provider = new ethers.providers.Web3Provider(window.ethereum, 80001);
-let dares = [
-  "Tell me who your crush is",
-  "Tell me who the most attractive person you've met",
-  "Drink 5 cups of coffee later at night",
-  "Tell me your darkest secret",
-  "Tell me who the most beautiful person for you right now",
-  "Tell me who you want to see right now",
-  "Tell me who you stalk on social media every night",
-  "Tell me about your first love",
-  "Tell me how you see yourself in the next five years",
-  "Do a backflip without jumping",
-  "Sing a song backwards",
-  "Dance without moving",
-  "Drink a coffee with chili oil",
-  "Eat an ice cream with your mouth closed",
-  "Sleep at night without closing your eyes",
-  "Walk at the mall like a penguin",
-];
+
 async function getProviderOrSigner() {
   await provider.send("eth_requestAccounts", []);
   const accounts = await provider.listAccounts();
@@ -348,14 +331,18 @@ async function getProviderOrSigner() {
 async function updateDareText() {
   try {
     let dareTextElement = document.getElementById("dare-text");
+    //dareTextElement.innerText = "Generating new dare...";
     let resultDare = await MyContract.requestDare();
-    dareTextElement.innerText = resultDare;
-    console.log("Dare text updated:", resultDare);
+    dareTextElement.innerText = "Generating new dare...";
+    setTimeout(() => {
+      dareTextElement.innerText = resultDare;
+      console.log("Dare text updated:", resultDare);
+    }, 3000);
   } catch (error) {
     console.error("Error while updating dare text:", error);
   }
 }
-async function getRequestStatus() {}
+
 async function getDare() {
   try {
     //let requestNum = await getRandomWords();
@@ -382,17 +369,9 @@ async function showRandomWord() {
 async function getRandomDare1() {
   try {
     // Request random words from the smart contract
-    const requestId = await MyContract.requestRandomWords();
+    const requestId = await MyContract.requestRandomWords({ gasLimit: 500000 });
 
-    // Wait for the random words to be generated (you can adjust the delay as needed)
-    await new Promise((resolve) => setTimeout(resolve, 10000));
-
-    // Get the dare using the requestId from the smart contract
-    const dare = await MyContract.requestDare();
-
-    // Display the dare on the page
-    const dareTextElement = document.getElementById("dare-text");
-    dareTextElement.innerText = dare;
+    await updateDareText();
   } catch (error) {
     console.error("Error getting random dare:", error);
   }

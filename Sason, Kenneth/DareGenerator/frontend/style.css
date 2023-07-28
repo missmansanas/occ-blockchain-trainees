@@ -58,6 +58,9 @@ h1{
 }
 .text-box{
     height: 80%;
+    margin:auto;
+    padding: 30px;
+    text-align: center;
 }
 .button-container{
     height: 20%;
@@ -92,8 +95,11 @@ button:hover{
     padding: 30px;
     border-radius: 10px;
     color: #fff;
+    display: flex;
+    padding: 20px;
 }
 .balance-text{
     color: #e7e734;
     font-size: 30px;
+    
 }
