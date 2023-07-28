@@ -16,35 +16,30 @@ contract VRFv2DirectFundingConsumer is
         uint256 payment
     );
     string[] dares = [
-            "Tell me who your crush is",
-            "Tell me who the most attractive person you've met",
-            "Drink 5 cups of coffee later at night",
-            "Tell me your darkest secret",
-            "Tell me who the most beautiful person for you right now"
-        ];
+        "Tell me who your crush is",
+        "Tell me who the most attractive person you've met",
+        "Drink 5 cups of coffee later at night",
+        "Tell me your darkest secret",
+        "Tell me who the most beautiful person for you right now"
+    ];
 
     struct RequestStatus {
-        uint256 paid; 
-        bool fulfilled; 
+        uint256 paid;
+        bool fulfilled;
         uint256[] randomWords;
     }
-    mapping(uint256 => RequestStatus)
-        public s_requests; 
+    mapping(uint256 => RequestStatus) public s_requests;
     uint256[] public requestIds;
     uint256 public lastRequestId;
 
- 
     uint32 callbackGasLimit = 100000;
 
-
     uint16 requestConfirmations = 3;
-
 
     uint32 numWords = 1;
     uint256 randomNumber;
 
     address linkAddress = 0x326C977E6efc84E512bB9C30f76E30c160eD06FB;
-
 
     address wrapperAddress = 0x99aFAf084eBA697E584501b8Ed2c0B37Dd136693;
 
@@ -108,7 +103,8 @@ contract VRFv2DirectFundingConsumer is
             "Unable to transfer"
         );
     }
-    function requestDare() public view returns(string memory){         
+
+    function requestDare() public view returns (string memory) {
         return dares[randomNumber];
     }
 }
