@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boxing Bonanza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Boxing Bonanza Match Results</h1>
+    <button id="fetchDataButton">Fetch Data</button>
+    <div id="data-container">
+        <!-- Fetched game results will be displayed here -->
+    </div>
+
+    <script>
+        const apiUrl = 'API'
+
+        async function fetchData() {
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query: `
+                            {
+                                gameResults(first: 10) {
+                                    id
+                                    player
+                                    requestId
+                                    didWin
+                                }
+                            }
+                        `,
+                    }),
+                });
+
+                const data = await response.json();
+                return data.data.gameResults;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        async function displayData() {
+            const dataContainer = document.getElementById('data-container');
+            const gameResults = await fetchData();
+
+            dataContainer.innerHTML = '';
+
+            gameResults.forEach(result => {
+                const resultDiv = document.createElement('div');
+                resultDiv.innerHTML = `
+                    <strong>ID:</strong> ${result.id}<br>
+                    <strong>Player:</strong> ${result.player}<br>
+                    <strong>Request ID:</strong> ${result.requestId}<br>
+                    <strong>Did Win:</strong> ${result.didWin}<br>
+                    <hr>
+                `;
+                dataContainer.appendChild(resultDiv);
+            });
+        }
+        const fetchDataButton = document.getElementById('fetchDataButton');
+        fetchDataButton.addEventListener('click', () => {
+            displayData();
+        });
+    </script>
+</body>
+</html>

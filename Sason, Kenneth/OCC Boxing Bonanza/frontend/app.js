@@ -197,7 +197,7 @@ async function handleResult(address, requestId) {
     let winningResult = (await ethers.utils.formatEther(result[7])) * 10 ** 18;
     let playerChoice = await result[5];
     document.getElementById("announcement").innerText = "Place your bet!";
-    if (winningResult == 0) {
+    if (winningResult == 0)  {
       document.getElementById("winner-result").innerText = "Red";
     } else if (winningResult == 1) {
       document.getElementById("winner-result").innerText = "Draw";
